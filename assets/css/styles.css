@@ -4,6 +4,7 @@
 /*===== VARIABLES CSS =====*/
 :root {
   --header-height: 3rem;
+  
 
   /*========== Colors ==========*/
   --first-color: #069C54;
@@ -30,11 +31,12 @@
 
   /*========== Margenes ==========*/
   --mb-1: .5rem;
-  --mb-2: 1rem;
+  --mb-2: 2rem; /* Example value */
   --mb-3: 1.5rem;
   --mb-4: 2rem;
   --mb-5: 2.5rem;
   --mb-6: 3rem;
+  --mb-7: 4rem;
 
   /*========== z index ==========*/
   --z-tooltip: 10;
