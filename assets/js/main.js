@@ -1,4 +1,79 @@
 /*==================== SHOW MENU ====================*/
+
+// Menggunakan SweetAlert untuk meminta nama pengguna
+Swal.fire({
+  title: 'Tulis namamu disini:',
+  input: 'text',
+  inputAttributes: {
+    autocapitalize: 'off'
+  },
+  showCancelButton: false,
+  confirmButtonText: 'Submit',
+  showLoaderOnConfirm: true,
+  allowOutsideClick: false
+}).then((result) => {
+  if (result.isConfirmed) {
+    Swal.fire(`Selamat Berkunjung: ${result.value}`);
+  }
+});
+
+
+// Menunggu dokumen dimuat sepenuhnya
+document.addEventListener("DOMContentLoaded", () => {
+  contentNotAvailable();
+});
+
+function contentNotAvailable() {
+  // Menambahkan event listener pada semua elemen dengan kelas "nav__link"
+  const navLinks = document.querySelectorAll(".nav__link");
+  navLinks.forEach(navLink => {
+    navLink.addEventListener("click", () => {
+      Swal.fire("konten belum ada", "", "info");
+    });
+  });
+
+  // Menambahkan event listener pada tombol pencarian
+  const searchButton = document.querySelector(".search-button");
+  if (searchButton) {
+    searchButton.addEventListener("click", () => {
+      Swal.fire("konten belum ada", "", "info");
+    });
+  }
+
+  // Menambahkan event listener pada semua tombol dengan kelas "btn"
+  const buttons = document.querySelectorAll(".btn");
+  buttons.forEach(button => {
+    button.addEventListener("click", () => {
+      Swal.fire("konten belum ada", "", "info");
+    });
+  });
+
+  // Menambahkan event listener pada lokasi restoran terdekat
+  const nearRestaurantLocation = document.querySelector(".near-restaurant-location");
+  if (nearRestaurantLocation) {
+    nearRestaurantLocation.addEventListener("click", () => {
+      Swal.fire("konten belum ada", "", "info");
+    });
+  }
+
+  // Menambahkan event listener pada semua elemen dengan kelas "our-chef-card"
+  const ourChefCards = document.querySelectorAll(".our-chef-card");
+  ourChefCards.forEach(ourChefCard => {
+    ourChefCard.addEventListener("click", () => {
+      Swal.fire("konten belum ada", "", "info");
+    });
+  });
+
+  // Menambahkan event listener pada tombol chef
+  const chefButton = document.querySelector(".chef-button");
+  if (chefButton) {
+    chefButton.addEventListener("click", () => {
+      Swal.fire("konten belum ada", "", "info");
+    });
+  }
+}
+
+
 const showMenu = (toggleId, navId) =>{
     const toggle = document.getElementById(toggleId),
     nav = document.getElementById(navId)

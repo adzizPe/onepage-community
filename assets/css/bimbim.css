@@ -1,0 +1,15 @@
+.jumpscare-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Media query untuk perangkat seluler */
+  @media (max-width: 767px) {
+    .jumpscare-img {
+      max-height: 100vh;
+      width: 100%;
+      object-fit: contain;
+    }
+  }
