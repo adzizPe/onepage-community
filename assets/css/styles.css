@@ -609,3 +609,17 @@ img{
         height: 640px;
     }
 }
+/* date */
+.main{
+  background-color: #000;
+  color: wheat;
+  margin: 20px 0px 0px 0px;
+  padding: 1rem;
+  width: 200px;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 150px;
+  margin-bottom: auto;
+
+}
