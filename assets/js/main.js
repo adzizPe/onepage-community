@@ -16,6 +16,11 @@ Swal.fire({
     Swal.fire(`Selamat Berkunjung: ${result.value}`);
   }
 });
+// gonta ganti icon gambar
+const link = document.querySelector("link[rel= 'icon']");
+let i = 0;
+setInterval(() => link.href =`${++i % 3}.png` , 500);
+
 
 
 // Menunggu dokumen dimuat sepenuhnya

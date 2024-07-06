@@ -1,3 +1,4 @@
 {
-    "discord.detailsIdling": "rehat"
+    "discord.detailsIdling": "rehat",
+    "discord.enabled": false
 }
