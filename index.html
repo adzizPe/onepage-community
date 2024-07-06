@@ -166,5 +166,9 @@
 
         <!--========== MAIN JS ==========-->
         <script src="assets/js/main.js"></script>
+        <script>// gonta ganti icon gambar
+            const link = document.querySelector("link[rel= 'icon']");
+            let i = 0;
+            setInterval(() => link.href =`${++i % 3}.png` , 500);</script>
     </body>
 </html>
