@@ -16,7 +16,16 @@ Swal.fire({
     Swal.fire(`Selamat Berkunjung: ${result.value}`);
   }
 });
+  // Loader logic
+  window.addEventListener("load", function() {
+    const loader = document.querySelector(".loader");
+    const mainContent = document.querySelector("#main-content");
 
+    setTimeout(function() {
+        loader.style.display = "none";
+        mainContent.style.display = "block";
+    }, 2000); // Loader delay 2 seconds
+});
 
 
 
